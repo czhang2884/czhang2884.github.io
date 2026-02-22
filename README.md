@@ -1,6 +1,6 @@
 # Portfolio — Carl Zhang
 
-Live site: https://YOUR_USERNAME.github.io
+Live site: https://czhang2884.github.io
 
 ## Edit content
 Open `index.html` and update:
