@@ -438,3 +438,18 @@ html[data-theme="light"] .footer{ background: rgba(247,247,251,0.6); }
   html[data-theme="light"] .nav__links{ background: rgba(247,247,251,0.9); }
   .nav__links.is-open{ display: flex; }
 }
+
+/* ====== Smooth scrolling + sticky-header anchor offset ====== */
+html{
+  scroll-behavior: smooth;
+}
+
+/* Offset anchor targets so sections aren't hidden behind the sticky header */
+.section{
+  scroll-margin-top: 90px; /* adjust if needed: 80–110px */
+}
+
+/* Also cover non-.section anchors like #top (your header) */
+#top{
+  scroll-margin-top: 90px;
+}
