@@ -174,9 +174,10 @@ html[data-theme="light"] .site-header{
 
 .icon{ font-size: 1.05rem; }
 
-.icon-img {
-  width: 16px;
-  height: 16px;
+.icon-img{
+  height: 18px;   /* control size here */
+  width: auto;    /* keeps aspect ratio */
+  display: block;
 }
 
 /* ====== Layout blocks ====== */
@@ -237,6 +238,10 @@ html[data-theme="light"] .site-header{
 
 .hero__meta{ display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 .pill{
+  display: inline-flex;        /* key change */
+  align-items: center;         /* vertical centering */
+  justify-content: center;     /* horizontal centering */
+
   font-weight: 700;
   font-size: 0.9rem;
   padding: 6px 10px;
