@@ -174,19 +174,9 @@ html[data-theme="light"] .site-header{
 
 .icon{ font-size: 1.05rem; }
 
-.icon-link.pill{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 10px;          /* keep your pill padding */
-  line-height: 1;             /* prevents extra vertical space */
-}
-
-.icon-link.pill .icon-img{
-  width: 18px;                /* tweak: 16–20px */
-  height: 18px;
-  object-fit: contain;
-  display: block;
+.icon-img {
+  width: 16px;
+  height: 16px;
 }
 
 /* ====== Layout blocks ====== */
