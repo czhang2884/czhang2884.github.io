@@ -184,6 +184,9 @@ html[data-theme="light"] .site-header{
 .section{
   padding: 64px 0;
 }
+
+#about { margin-top: 60px; }
+
 .section__head{
   display: grid;
   gap: 10px;
