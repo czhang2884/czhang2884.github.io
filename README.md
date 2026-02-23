@@ -1,20 +1,21 @@
-# Portfolio — Carl Zhang
+# Carl Zhang — Portfolio (GitHub Pages)
 
-Live site: https://czhang2884.github.io
+This repository hosts my personal portfolio website:
 
-## Edit content
-Open `index.html` and update:
-- Name + headline (top of file + hero section)
-- Links (LinkedIn, GitHub, email)
-- Projects (section `#projects`)
-- Resume file: replace `/assets/resume.pdf`
+**Live:** https://czhang2884.github.io
 
-## Add a headshot
-1. Add your image to `assets/headshot.jpg`
-2. In `index.html`, uncomment the `<img>` line inside the `.avatar` block.
+## What’s included
 
-## Run locally
-Open `index.html` in a browser, or use VSCode Live Server.
+- `index.html` — single-page portfolio (About, Projects, Experience, Publications, Contact)
+- `style.css` — responsive styling + dark/light themes
+- `script.js` — theme toggle, mobile menu, project filtering, copy-to-clipboard
 
-## Deploy
-Settings → Pages → Deploy from branch → main / root.
+## Quick start (GitHub Pages)
+
+1. Put these files in the **root** of your `czhang2884.github.io` repository.
+2. (Optional) Add your resume PDF at: `assets/Carl_Zhang_Resume.pdf`
+3. Commit and push:
+   ```bash
+   git add .
+   git commit -m "Update portfolio site"
+   git push
