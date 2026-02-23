@@ -3,40 +3,47 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Carl Zhang — Statistics & Data Analytics</title>
-  <meta name="description" content="Portfolio of Carl Zhang — statistician & data analyst focused on education analytics, clinical research, and reproducible modeling." />
+  <meta name="description" content="Carl Zhang — Biostatistician (M.S. Statistics). Clinical study analysis, SAPs, TFLs, and reproducible pipelines in SAS and R." />
+  <title>Carl Zhang | Biostatistics Portfolio</title>
 
-  <!-- Open Graph (better previews on LinkedIn/Slack) -->
-  <meta property="og:title" content="Carl Zhang — Statistics & Data Analytics" />
-  <meta property="og:description" content="Education analytics • Clinical research • Reproducible modeling • SQL/R/Python/SAS" />
-  <meta property="og:type" content="website" />
-  <!-- Optional: after you add an image, update this path -->
-  <!-- <meta property="og:image" content="https://yourusername.github.io/assets/headshot.jpg" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Ctext y='52' x='6' font-size='52'%3E%F0%9F%93%8A%3C/text%3E%3C/svg%3E" />
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="header">
-    <nav class="nav">
-      <div class="brand">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <a href="#" class="brand-name">Carl Zhang</a>
-      </div>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true">CZ</span>
+        <span class="brand__text">Carl Zhang</span>
+      </a>
 
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="nav__toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button>
+        <span class="nav__toggle-bars" aria-hidden="true"></span>
       </button>
 
-      <div class="nav-links" data-nav>
-        <a href="#work">Work</a>
-        <a href="#projects">Projects</a>
-        <a href="#writing">Writing</a>
+      <div class="nav__links" data-menu>
         <a href="#about">About</a>
-        <a href="#contact" class="pill">Contact</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+
+        <button class="btn btn--ghost" type="button" data-theme-toggle aria-label="Toggle theme">
+          <span class="icon" aria-hidden="true">🌓</span>
+          <span class="btn__text">Theme</span>
+        </button>
+
+        <!-- Optional: add a PDF at /assets/Carl_Zhang_Resume.pdf -->
+        <a class="btn btn--primary" href="./assets/Carl_Zhang_Resume.pdf" target="_blank" rel="noreferrer">
+          Resume
+        </a>
       </div>
     </nav>
   </header>
@@ -44,362 +51,315 @@
   <main id="main">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Statistician • Data Analyst • Reproducible Modeling</p>
-          <h1>
-            I build decision-ready analysis from messy, high-stakes data —
-            <span class="muted">education + clinical research.</span>
-          </h1>
-          <p class="lede">
-            Master’s-trained statistician with experience in multi-trial clinical datasets and education assessment analytics.
-            I ship clean pipelines, defensible methods, and clear narratives that stakeholders can act on.
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Biostatistics • Clinical Trials • Reproducible Analytics</p>
+          <h1>Biostatistician focused on clear, reliable clinical study results.</h1>
+          <p class="lead">
+            I’m <strong>Carl Zhang</strong> (M.S. Statistics), experienced delivering clinical study analysis,
+            Statistical Analysis Plans (SAP), and tables/figures/listings (TFLs), with reproducible pipelines in
+            <strong>SAS</strong> and <strong>R</strong>.
           </p>
 
-          <div class="cta-row">
-            <a class="btn primary" href="#projects">View projects</a>
-            <a class="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Resume (PDF)</a>
-            <a class="btn ghost" href="#contact">Let’s talk</a>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in Touch</a>
           </div>
 
-          <div class="hero-badges">
-            <span class="badge">R</span>
-            <span class="badge">Python</span>
-            <span class="badge">SQL</span>
-            <span class="badge">SAS</span>
-            <span class="badge">Clinical Trials</span>
-            <span class="badge">Education Analytics</span>
+          <div class="hero__meta">
+            <span class="pill">Ellicott City, MD</span>
+            <span class="pill">US Citizen</span>
+            <span class="pill">SAS • R • Python</span>
           </div>
-        </div>
 
-        <div class="hero-card">
-          <div class="card">
-            <div class="card-top">
-              <div class="avatar" aria-hidden="true">
-                <!-- Optional: replace with an image -->
-                <!-- <img src="assets/headshot.jpg" alt="Carl Zhang headshot" /> -->
-                <span>CZ</span>
-              </div>
-              <div>
-                <p class="card-title">Currently open to</p>
-                <p class="card-sub">Analytics / Biostatistics roles (remote or hybrid)</p>
-              </div>
-            </div>
-
-            <div class="card-list">
-              <div class="card-item">
-                <span class="dot"></span>
-                <div>
-                  <p class="item-title">Strengths</p>
-                  <p class="item-sub">Modeling, validation, reproducibility, stakeholder clarity</p>
-                </div>
-              </div>
-              <div class="card-item">
-                <span class="dot"></span>
-                <div>
-                  <p class="item-title">Domains</p>
-                  <p class="item-sub">Education outcomes • Psychiatry research • Trial analytics</p>
-                </div>
-              </div>
-              <div class="card-item">
-                <span class="dot"></span>
-                <div>
-                  <p class="item-title">Tooling</p>
-                  <p class="item-sub">R/Python/SAS/SQL • dashboards • pipelines</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-actions">
-              <a class="btn small" href="#contact">Email me</a>
-              <a class="btn small ghost" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="btn small ghost" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-
-            <p class="micro muted">
-              Tip: Replace LinkedIn/GitHub links and add your resume in <code>/assets/resume.pdf</code>.
-            </p>
+          <div class="hero__links">
+            <a class="link" href="mailto:carlzhang00@gmail.com">carlzhang00@gmail.com</a>
+            <span class="dot" aria-hidden="true">•</span>
+            <a class="link" href="tel:+13016759885">(301) 675-9885</a>
+            <span class="dot" aria-hidden="true">•</span>
+            <a class="link" href="https://www.linkedin.com/in/carl-zhang7" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span class="dot" aria-hidden="true">•</span>
+            <a class="link" href="https://github.com/czhang2884" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
+
+        <aside class="hero__card card">
+          <h2 class="card__title">Methods & Focus</h2>
+          <ul class="checklist">
+            <li>GLM / GLMM / MMRM</li>
+            <li>GEE</li>
+            <li>Survival analysis (KM / Cox)</li>
+            <li>Multiple imputation</li>
+            <li>Clinical-style outputs (TFLs, KM curves, swimmer plots)</li>
+            <li>Reproducible reporting (R Markdown / Jupyter, Git, QC)</li>
+          </ul>
+          <div class="card__footer">
+            <a class="btn btn--small btn--ghost" href="#publications">See publications</a>
+          </div>
+        </aside>
       </div>
+      <div class="hero__bg" aria-hidden="true"></div>
     </section>
 
-    <!-- WORK / IMPACT -->
-    <section id="work" class="section">
+    <!-- ABOUT -->
+    <section class="section" id="about">
       <div class="container">
-        <div class="section-head">
-          <h2>Work highlights</h2>
-          <p class="muted">Short, concrete, gatekeeper-friendly proof of impact.</p>
+        <div class="section__head">
+          <h2>About</h2>
+          <p>
+            Biostatistician with independent delivery of clinical study analysis, SAPs, and TFLs, contributing to
+            peer-reviewed publications and reproducible pipelines in SAS and R. Experienced collaborating with
+            clinicians and data managers, and coaching junior analysts/students.
+          </p>
         </div>
 
-        <div class="grid-3">
-          <article class="tile">
-            <h3>Mayo Clinic — Clinical research analytics</h3>
-            <p class="muted">
-              Statistical analysis across multi-trial psychiatry datasets; contributed to peer-reviewed publications.
-            </p>
-            <ul class="bullets">
-              <li>Analyzed pooled clinical trial outcomes to quantify thresholds for clinical benefit.</li>
-              <li>Built reproducible analysis workflows and reporting outputs for research teams.</li>
-              <li>Delivered results with clear interpretation (not just p-values).</li>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Education</h3>
+            <ul class="timeline">
+              <li>
+                <div class="timeline__row">
+                  <span class="timeline__role">M.S., Statistics</span>
+                  <span class="timeline__date">2023–2025</span>
+                </div>
+                <div class="timeline__org">University of Minnesota — Minneapolis, MN</div>
+              </li>
+              <li>
+                <div class="timeline__row">
+                  <span class="timeline__role">B.A., Statistics</span>
+                  <span class="timeline__date">2019–2023</span>
+                </div>
+                <div class="timeline__org">Carleton College — Northfield, MN</div>
+              </li>
             </ul>
-          </article>
+          </div>
 
-          <article class="tile">
-            <h3>Delta Analytics — NLP pipeline at scale</h3>
-            <p class="muted">
-              Automated text categorization for 50,000+ records using embeddings and scalable preprocessing.
-            </p>
-            <ul class="bullets">
-              <li>Built end-to-end pipeline: cleaning → embeddings → similarity-based tagging.</li>
-              <li>Improved meaningful categorization performance by ~40% vs baseline approach.</li>
-              <li>Reduced manual labeling load and enabled consistent downstream analytics.</li>
-            </ul>
-          </article>
-
-          <article class="tile">
-            <h3>University of Minnesota — Statistics TA</h3>
-            <p class="muted">
-              Led labs and coached students in regression/ANOVA with reproducible R workflows.
-            </p>
-            <ul class="bullets">
-              <li>Translated theory into practice with clean, teachable code patterns.</li>
-              <li>Helped students debug analysis logic and interpret results responsibly.</li>
-              <li>Promoted reproducibility and good statistical hygiene.</li>
-            </ul>
-          </article>
+          <div class="card">
+            <h3>Technical Toolkit</h3>
+            <div class="tags">
+              <span class="tag">SAS (MIXED, GLIMMIX, PHREG, FREQ, LOGISTIC)</span>
+              <span class="tag">R (tidyverse, lme4, survival, gee, broom, ggplot2)</span>
+              <span class="tag">Shiny</span>
+              <span class="tag">Python (pandas, scikit-learn)</span>
+              <span class="tag">SQL (ETL basics)</span>
+              <span class="tag">R Markdown / Jupyter</span>
+              <span class="tag">Git</span>
+              <span class="tag">Documented QC / code review</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section alt">
+    <section class="section" id="projects">
       <div class="container">
-        <div class="section-head">
-          <h2>Featured projects</h2>
-          <p class="muted">Pick 3–5. Each should answer: problem → method → impact → link.</p>
+        <div class="section__head">
+          <h2>Selected Projects</h2>
+          <p>Representative work across simulation, clinical trial methods, and healthcare visualization.</p>
         </div>
 
-        <div class="projects">
-          <!-- PROJECT 1 -->
-          <article class="project">
-            <div class="project-body">
-              <h3>Education assessment modeling (STAR)</h3>
-              <p class="muted">
-                Modeled student performance and growth patterns across demographics to surface actionable gaps and
-                identify where interventions would matter most.
-              </p>
-
-              <div class="tags">
-                <span class="tag">R</span>
-                <span class="tag">Mixed effects</span>
-                <span class="tag">Growth modeling</span>
-                <span class="tag">Equity</span>
-              </div>
-
-              <ul class="bullets">
-                <li>Built defensible models to separate baseline performance from growth signals.</li>
-                <li>Created interpretable outputs that non-technical stakeholders can trust.</li>
-                <li>Designed analysis for “what should we do next?” not “look at this chart.”</li>
-              </ul>
-
-              <div class="project-links">
-                <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
-                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Write-up</a>
-              </div>
-            </div>
-
-            <div class="project-media">
-              <!-- Optional image -->
-              <!-- <img src="assets/project-1.png" alt="Project chart preview"> -->
-              <div class="media-placeholder">
-                <p class="muted">Add a screenshot (optional)</p>
-                <code>/assets/project-1.png</code>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 2 -->
-          <article class="project">
-            <div class="project-body">
-              <h3>Healthcare variation explorer (Shiny)</h3>
-              <p class="muted">
-                Interactive tool for exploring regional healthcare variation to reduce one-off requests and speed up
-                decision-ready comparisons.
-              </p>
-
-              <div class="tags">
-                <span class="tag">R Shiny</span>
-                <span class="tag">Self-serve analytics</span>
-                <span class="tag">Visualization</span>
-              </div>
-
-              <ul class="bullets">
-                <li>Built a clean interface for filtering and comparing regions quickly.</li>
-                <li>Structured outputs to highlight variation drivers, not just differences.</li>
-                <li>Designed for stakeholder clarity and repeatable analysis.</li>
-              </ul>
-
-              <div class="project-links">
-                <a class="btn small" href="https://zhangc3.shinyapps.io/final-project-carl/" target="_blank" rel="noreferrer">Live demo</a>
-                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Code</a>
-              </div>
-            </div>
-
-            <div class="project-media">
-              <div class="media-placeholder">
-                <p class="muted">Add a screenshot (optional)</p>
-                <code>/assets/project-2.png</code>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 3 -->
-          <article class="project">
-            <div class="project-body">
-              <h3>NLP categorization pipeline (50k+ records)</h3>
-              <p class="muted">
-                Built scalable preprocessing and embedding-based similarity tagging to automate consistent categorization.
-              </p>
-
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">Embeddings</span>
-                <span class="tag">Pipelines</span>
-                <span class="tag">Text analytics</span>
-              </div>
-
-              <ul class="bullets">
-                <li>Standardized text cleaning + feature generation for reliable downstream modeling.</li>
-                <li>Improved meaningful categorization by ~40% vs baseline approach.</li>
-                <li>Enabled scalable tagging workflows with measurable manual-effort reduction.</li>
-              </ul>
-
-              <div class="project-links">
-                <a class="btn small" href="#" target="_blank" rel="noreferrer">Code</a>
-                <a class="btn small ghost" href="#" target="_blank" rel="noreferrer">Methods</a>
-              </div>
-            </div>
-
-            <div class="project-media">
-              <div class="media-placeholder">
-                <p class="muted">Add a diagram (optional)</p>
-                <code>/assets/project-3.png</code>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- WRITING -->
-    <section id="writing" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Writing</h2>
-          <p class="muted">Optional, but powerful: 2–4 short posts proves clarity and judgment.</p>
+        <div class="controls">
+          <div class="segmented" role="tablist" aria-label="Project filter">
+            <button class="segmented__btn is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="segmented__btn" type="button" data-filter="python" role="tab" aria-selected="false">Python</button>
+            <button class="segmented__btn" type="button" data-filter="sas" role="tab" aria-selected="false">SAS</button>
+            <button class="segmented__btn" type="button" data-filter="r" role="tab" aria-selected="false">R / Shiny</button>
+          </div>
         </div>
 
-        <div class="grid-2">
-          <article class="tile">
-            <h3>How I validate models (without fooling myself)</h3>
-            <p class="muted">
-              A practical checklist: leakage, splits, assumptions, and why interpretability beats “best score” in real work.
-            </p>
-            <a class="text-link" href="#" target="_blank" rel="noreferrer">Read →</a>
-          </article>
-
-          <article class="tile">
-            <h3>Reproducible analysis habits that save teams</h3>
-            <p class="muted">
-              Naming conventions, versioning, code review, and the simplest reporting templates that prevent chaos.
-            </p>
-            <a class="text-link" href="#" target="_blank" rel="noreferrer">Read →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>About</h2>
-          <p class="muted">Keep this tight. Aim for credibility + direction, not autobiography.</p>
-        </div>
-
-        <div class="about">
-          <div class="about-main">
+        <div class="cards" data-projects>
+          <article class="card project" data-tags="python">
+            <div class="project__head">
+              <h3>Graduate Capstone: Oversampling Modeling & Simulation Study</h3>
+              <span class="badge">Python</span>
+            </div>
             <p>
-              I’m a statistician focused on building analysis that holds up under scrutiny — clear assumptions, careful validation,
-              and results that are easy to act on. I’ve worked in clinical research and education analytics, and I care about
-              transparent methods and measurable impact.
+              Built and stress-tested automated workflows to evaluate oversampling strategies under low-sample,
+              imbalanced-data conditions; quantified performance tradeoffs to inform data-collection and modeling
+              decisions in healthcare contexts.
             </p>
+            <ul class="bullets">
+              <li>Automated evaluation pipelines for systematic stress testing</li>
+              <li>Cross-validated comparisons across strategies and settings</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn btn--small btn--ghost" href="https://github.com/czhang2884" target="_blank" rel="noreferrer">Code (GitHub)</a>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="sas r">
+            <div class="project__head">
+              <h3>Clinical Trial Methods & Outputs</h3>
+              <span class="badge">SAS • R</span>
+            </div>
+            <p>
+              Applied mTPI-2 toxicity monitoring and response-rate sample size methods to simulated clinical trial
+              scenarios; evaluated lab technique comparability for synthetic biomarker datasets; generated
+              clinical-style outputs and drafted miniSAP outlines.
+            </p>
+            <ul class="bullets">
+              <li>Swimmer plots, KM curves, and clinical outputs for interpretation</li>
+              <li>MiniSAP-style structure for reproducible analysis planning</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn btn--small btn--ghost" href="#contact">Ask for a demo</a>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="r">
+            <div class="project__head">
+              <h3>Healthcare Visualization Dashboard</h3>
+              <span class="badge">R • Shiny</span>
+            </div>
+            <p>
+              Built and deployed an interactive R Shiny dashboard examining regional end-of-life care utilization.
+              Designed filters and visualizations for clearer interpretation of geographic variation.
+            </p>
+            <div class="project__links">
+              <a class="btn btn--small btn--primary" href="https://zhangc3.shinyapps.io/final-project-carl/" target="_blank" rel="noreferrer">Live App</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2>Experience</h2>
+          <p>Clinical research, analytics delivery, and teaching/coaching.</p>
+        </div>
+
+        <div class="stack">
+          <article class="card">
+            <div class="xp__head">
+              <div>
+                <h3>Teaching Assistant</h3>
+                <div class="muted">University of Minnesota</div>
+              </div>
+              <div class="muted">01/2025 – 05/2025</div>
+            </div>
+            <ul class="bullets">
+              <li>Coached a cohort of 30 students in applied statistical programming, diagnostics, and reporting; authored reusable notebooks adopted in subsequent terms.</li>
+              <li>Implemented standardized analytical review procedures and reproducible reporting workflows (R Markdown), strengthening accuracy and transparency.</li>
+              <li>Provided individualized guidance on analysis interpretation.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="xp__head">
+              <div>
+                <h3>Data Fellow</h3>
+                <div class="muted">Delta Analytics</div>
+              </div>
+              <div class="muted">02/2024 – 06/2024</div>
+            </div>
+            <ul class="bullets">
+              <li>Designed and implemented preprocessing for 50,000+ text records, standardizing cleaning/transformation to improve integrity for downstream analysis.</li>
+              <li>Performed comparative model assessment using cross-validated metrics; selected approaches improving classification accuracy by ~40% and stable across heterogeneous sources.</li>
+              <li>Operationalized a documented, version-controlled modeling pipeline enabling scalable deployment and consistent reporting.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="xp__head">
+              <div>
+                <h3>Student Data Solutionist</h3>
+                <div class="muted">Carleton College</div>
+              </div>
+              <div class="muted">09/2021 – 06/2023</div>
+            </div>
+            <ul class="bullets">
+              <li>Automated survey data cleaning and transformation workflows in R for campus-wide COVID misinformation research, reducing manual preprocessing time.</li>
+              <li>Built and maintained a Django-based data dashboard integrating web-scraped telescope calibration data for improved accessibility and usability.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="xp__head">
+              <div>
+                <h3>Pharmacogenomic & Experimental Therapeutics Research Intern</h3>
+                <div class="muted">Mayo Clinic</div>
+              </div>
+              <div class="muted">07/2021 – 09/2021</div>
+            </div>
+            <ul class="bullets">
+              <li>Led statistical analyses across 5 multi-site adolescent depression clinical trials to derive PRO response thresholds using equipercentile linking aligned to CGI anchors.</li>
+              <li>Conducted baseline-adjusted and cross-trial validation (correlation, sensitivity analyses, stratified modeling) supporting robustness and generalizability; contributed to two peer-reviewed publications.</li>
+              <li>Developed TFLs and statistical analysis sections in R; collaborated with clinicians/data managers to refine endpoints and sensitivity analyses aligned with estimand principles.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section__head">
+          <h2>Publications</h2>
+          <p>Peer-reviewed work in clinical psychiatry and adolescent depression outcomes.</p>
+        </div>
+
+        <div class="stack">
+          <article class="card pub">
+            <h3 class="pub__title">
+              Toward a Definition of “No Meaningful Benefit” From Antidepressant Treatment: An Equipercentile Analysis with CrossTrial Validation Across Multiple Rating Scales
+            </h3>
             <p class="muted">
-              Interests: causal-ish thinking where appropriate, robust evaluation, and tools that make teams faster without lowering rigor.
+              Zhang C., Virani S., Mayes T., Carmody T., Croarkin P.E., Weinshilboum R., Rush A.J., Trivedi M., Athreya A.P., Bobo W.V.
+              <br />J Clin Psychiatry. 2022;83(4):21m14239.
             </p>
+          </article>
 
-            <div class="about-actions">
-              <a class="btn" href="assets/resume.pdf" target="_blank" rel="noreferrer">Download resume</a>
-              <a class="btn ghost" href="#projects">See projects</a>
-            </div>
-          </div>
-
-          <div class="about-side">
-            <div class="mini-card">
-              <h3>Skills snapshot</h3>
-              <ul class="compact">
-                <li><strong>Stats:</strong> GLMs, mixed effects, survival, Bayesian (when useful)</li>
-                <li><strong>Data:</strong> SQL, cleaning, QA, reproducible pipelines</li>
-                <li><strong>Tools:</strong> R, Python, SAS, Tableau/PowerBI</li>
-                <li><strong>Outputs:</strong> dashboards, reports, stakeholder narratives</li>
-              </ul>
-            </div>
-
-            <div class="mini-card">
-              <h3>Signal (not fluff)</h3>
-              <ul class="compact">
-                <li>Peer-reviewed psychiatry publications</li>
-                <li>50k+ record NLP automation</li>
-                <li>Education analytics using assessment + demographic data</li>
-              </ul>
-            </div>
-          </div>
+          <article class="card pub">
+            <h3 class="pub__title">
+              A Characterization of the Clinical Global Impression Scale Thresholds in the Treatment of Adolescent Depression Across Multiple Rating Scales
+            </h3>
+            <p class="muted">
+              Zhang C., Voort J.L.V., Yuruk D., Mills J.A., Emslie G.J., Kennard B.D., Mayes T., Trivedi M., Bobo W.V., Strawn J.R., Athreya A.P., Croarkin P.E.
+              <br />J Child Adolesc Psychopharmacol. 2022;32(5):278287.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section class="section" id="contact">
       <div class="container">
-        <div class="section-head">
+        <div class="section__head">
           <h2>Contact</h2>
-          <p class="muted">One click to reach you. Don’t make recruiters work.</p>
+          <p>If you’d like to collaborate, discuss a role, or request a writing sample / code sample, reach out.</p>
         </div>
 
-        <div class="contact">
-          <div class="tile">
-            <h3>Let’s connect</h3>
-            <p class="muted">
-              If you’re hiring for analytics / statistics roles, I’d love to share relevant work samples or talk through where I can contribute.
-            </p>
-
-            <div class="contact-links">
-              <a class="btn primary" href="mailto:YOUR_EMAIL_HERE">Email</a>
-              <a class="btn" href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="btn ghost" href="https://github.com/YOUR_GITHUB" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-
-            <p class="micro muted">Replace the placeholders above with your real links.</p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Direct</h3>
+            <ul class="contact">
+              <li><span>Email</span><a href="mailto:carlzhang00@gmail.com">carlzhang00@gmail.com</a></li>
+              <li><span>Phone</span><a href="tel:+13016759885">(301) 675-9885</a></li>
+              <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/carl-zhang7" target="_blank" rel="noreferrer">linkedin.com/in/carl-zhang7</a></li>
+              <li><span>GitHub</span><a href="https://github.com/czhang2884" target="_blank" rel="noreferrer">github.com/czhang2884</a></li>
+              <li><span>Location</span><span>Ellicott City, MD</span></li>
+              <li><span>Work Auth</span><span>US Citizen</span></li>
+            </ul>
           </div>
 
-          <div class="tile">
-            <h3>Quick details</h3>
-            <ul class="compact">
-              <li><strong>Location:</strong> Ellicott City, MD (open to remote/hybrid)</li>
-              <li><strong>Focus:</strong> Education analytics, biostatistics, pipelines, reporting</li>
-              <li><strong>Availability:</strong> Interviewing now</li>
-            </ul>
+          <div class="card">
+            <h3>Quick note template</h3>
+            <p class="muted">Copy/paste into an email:</p>
+            <pre class="snippet" aria-label="Email template">Hi Carl,
+
+I came across your portfolio and wanted to connect about [role / project].
+Are you available for a quick chat this week?
+
+Best,
+[Name]</pre>
+            <button class="btn btn--primary btn--small" type="button" data-copy-snippet>Copy template</button>
+            <p class="muted small" data-copy-status aria-live="polite"></p>
           </div>
         </div>
       </div>
@@ -407,12 +367,15 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer-row">
-      <p class="muted">© <span id="year"></span> Carl Zhang</p>
-      <p class="muted">Built with plain HTML/CSS for speed and zero bloat.</p>
+    <div class="container footer__row">
+      <div class="muted">© <span data-year></span> Carl Zhang</div>
+      <div class="footer__links">
+        <a href="#top">Back to top</a>
+        <a href="https://czhang2884.github.io" target="_blank" rel="noreferrer">Portfolio</a>
+      </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="./script.js" defer></script>
 </body>
 </html>
