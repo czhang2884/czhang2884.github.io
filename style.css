@@ -180,6 +180,11 @@ html[data-theme="light"] .site-header{
   display: block;
 }
 
+/* Smaller only for gmail.png */
+img[src$="gmail.png"]{
+  height: 16px;   /* adjust as needed */
+}
+
 /* ====== Layout blocks ====== */
 .section{
   padding: 64px 0;
