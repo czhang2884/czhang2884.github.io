@@ -30,9 +30,9 @@
 
       <div class="nav__links" data-menu>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#skills">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#experience">Skills</a>
         <a href="#publications">Publications</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#contact">Contact</a>
@@ -95,7 +95,7 @@
             <li><strong>End-to-end analytics pipelines:</strong> R, SAS, Python, SQL</li>
             <li><strong>DS Skills:</strong> Transformer embeddings, Neural networks, Gradient boosting</li>
             <li><strong>Reproducible workflows:</strong> Git, QC, R Markdown/Jupyter</li>
-            <li><strong>Presentation and Reporting:</strong> Tableau, PowerBI, Shiny App</li>
+            <li><strong>Visualization and Reporting:</strong> Tableau, PowerBI, Shiny App</li>
             
           </ul>
           <div class="card__footer">
@@ -153,6 +153,171 @@
                 tables, figures, and dashboards to audiences with varied technical backgrounds</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2>Experience</h2>
+          <p>Analytics delivery, teaching/coaching, and applied research.</p>
+        </div>
+
+        <div class="stack">
+          <article class="card">
+            <div class="xp__head">
+              <div>
+                <h3>Teaching Assistant</h3>
+                <div class="muted">University of Minnesota</div>
+              </div>
+              <div class="muted">01/2025 – 05/2025</div>
+            </div>
+            <ul class="bullets">
+              <li>Coached a cohort of 30 students in applied statistical programming, model diagnostics, and reporting</li>
+              <li>Implemented standardized analytical review procedures and reproducible reporting workflows (R Markdown), strengthening result accuracy and methodological transparency</li>
+              <li>Provided individualized guidance on analysis interpretation.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="xp__head">
+              <div>
+                <h3>Data Fellow</h3>
+                <div class="muted">Delta Analytics</div>
+              </div>
+              <div class="muted">02/2024 – 06/2024</div>
+            </div>
+            <ul class="bullets">
+              <li>Developed an NLP system that predicted top relevant categories per experience, reducing reliance on manual labeling.</li>
+              <li>Engineered data preprocessing pipelines for a dataset of over 50,000 records, reducing missing and unreliable values.</li>
+              <li>Identified limitations of traditional classifiers and implemented an improved KeyBERT + transformer-based embedding pipeline.</li>
+              <li>Delivered reusable Python scripts designed for local execution and future scalability.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="xp__head">
+              <div>
+                <h3>Student Data Consultant</h3>
+                <div class="muted">Carleton College</div>
+              </div>
+              <div class="muted">09/2021 – 06/2023</div>
+            </div>
+            <ul class="bullets">
+              <li>Programmed and automated data wrangling in R for survey-based research on COVID misinformation.</li>
+              <li>Engineered a Django visualization tool using web-scraping to manage and present telescope data for calibration workflows.</li>
+              <li>Resolved code-related maintenance issues within campus-wide computer systems, ensuring stable functionality.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="xp__head">
+              <div>
+                <h3>Research Intern</h3>
+                <div class="muted">Mayo Clinic</div>
+              </div>
+              <div class="muted">07/2021 – 09/2021</div>
+            </div>
+            <ul class="bullets">
+              <li>Led statistical analyses across 5 multi-site clinical trials to derive clinically
+                interpretable PRO response thresholds using equipercentile linking methods, aligning
+                patient-reported outcomes with CGI-based clinical anchors.</li>
+              <li>Conducted baseline-adjusted and cross-trial validation analyses (correlation, sensitivity analyses,
+                stratified modelling) to evaluate robustness and generalizability of response thresholds, contributing
+                to two peer-reviewed publications.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Selected Projects</h2>
+        </div>
+
+        <div class="controls">
+          <div class="segmented" role="tablist" aria-label="Project filter">
+            <button class="segmented__btn is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="segmented__btn" type="button" data-filter="python" role="tab" aria-selected="false">Python</button>
+            <button class="segmented__btn" type="button" data-filter="r" role="tab" aria-selected="false">R / Shiny</button>
+            <button class="segmented__btn" type="button" data-filter="sas" role="tab" aria-selected="false">SAS</button>
+            <button class="segmented__btn" type="button" data-filter="sql" role="tab" aria-selected="false">SQL</button>
+          </div>
+        </div>
+
+        <div class="cards" data-projects>
+          <article class="card project" data-tags="python">
+            <div class="project__head">
+              <h3>Simulation Study: Oversampling Under Imbalanced Data </h3>
+              <span class="badge">Python</span>
+            </div>
+            <p>
+              Designed simulation experiments to evaluate oversampling strategies under low-sample, imbalanced settings.
+              Quantified when augmented subsets can match full-dataset performance and where they fail.
+            </p>
+            <ul class="bullets">
+              <li>Automated evaluation workflows and stress testing</li>
+              <li>Clear performance tradeoffs and recommendations</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn btn--small btn--ghost" href="https://github.com/czhang2884" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="r">
+            <div class="project__head">
+              <h3>Interactive Dashboard: End-of-Life Care Utilization</h3>
+              <span class="badge">R • Shiny</span>
+            </div>
+            <p>
+              Built and deployed an interactive Shiny dashboard to explore regional utilization patterns with intuitive
+              filters and visualizations for interpretation.
+            </p>
+            <div class="project__links">
+              <a class="btn btn--small btn--primary" href="https://zhangc3.shinyapps.io/final-project-carl/" target="_blank" rel="noreferrer">Live App</a>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="sas r">
+            <div class="project__head">
+              <h3>Clinical Methods & Reporting Outputs</h3>
+              <span class="badge">SAS • R</span>
+            </div>
+            <p>
+            </p>
+            <ul class="bullets">
+              <li>Applied mTPI-2 toxicity monitoring and response-rate sample size methods to simulated clinical trial scenarios.</li>
+              <li>Evaluated comparability across lab techniques for synthetic biomarker datasets to assess assay selection reliability.</li>
+              <li>Generated clinical-style outputs (e.g., swimmer plots) to support interpretation of treatment response patterns.</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn btn--small btn--ghost" href="#publications">Related publications</a>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="python nlp">
+            <div class="project__head">
+              <h3>Clinical Methods & Reporting Outputs</h3>
+              <span class="badge">Python • NLP • Deep Learning • Web Scraping</span>
+            </div>
+            <p>
+              Predicting stock prices using social network sentiment
+            </p>
+            <ul class="bullets">
+              <li>Collected and cleaned 450K+ tweets with Python and merged with stock market time-series data</li>
+              <li>Built and tuned deep learning models (CNN + LSTM) for sentiment analysis and multi-step stock price forecasting</li>
+              <li>Conducted EDA and statistical validation to ensure time-series stationarity and benchmarked against traditional VAR models, showing 70%+ error reduction with LSTM</li>
+            </ul>
+            <div class="project__links">
+              <a class="btn btn--small btn--ghost" href="#publications">Related publications</a>
+            </div>
+          </article>
+          
         </div>
       </div>
     </section>
@@ -219,203 +384,6 @@
             </div>
           </div>
         </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section__head">
-          <h2>Selected Projects</h2>x
-        </div>
-
-        <div class="controls">
-          <div class="segmented" role="tablist" aria-label="Project filter">
-            <button class="segmented__btn is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
-            <button class="segmented__btn" type="button" data-filter="python" role="tab" aria-selected="false">Python</button>
-            <button class="segmented__btn" type="button" data-filter="r" role="tab" aria-selected="false">R / Shiny</button>
-            <button class="segmented__btn" type="button" data-filter="sas" role="tab" aria-selected="false">SAS</button>
-            <button class="segmented__btn" type="button" data-filter="sql" role="tab" aria-selected="false">SQL</button>
-          </div>
-        </div>
-
-        <div class="cards" data-projects>
-          <article class="card project" data-tags="python">
-            <div class="project__head">
-              <h3>Simulation Study: Oversampling Under Imbalanced Data</h3>
-              <span class="badge">Python</span>
-            </div>
-            <p>
-              Designed simulation experiments to evaluate oversampling strategies under low-sample, imbalanced settings.
-              Quantified when augmented subsets can match full-dataset performance and where they fail.
-            </p>
-            <ul class="bullets">
-              <li>Automated evaluation workflows and stress testing</li>
-              <li>Clear performance tradeoffs and recommendations</li>
-            </ul>
-            <div class="project__links">
-              <a class="btn btn--small btn--ghost" href="https://github.com/czhang2884" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <article class="card project" data-tags="python">
-            <div class="project__head">
-              <h3>NLP Categorization Pipeline (50k+ Records)</h3>
-              <span class="badge">Python</span>
-            </div>
-            <p>
-              Built a documented, reusable NLP pipeline to categorize large text datasets, replacing underperforming
-              classifiers with embedding-based similarity approaches for more meaningful categorization.
-            </p>
-            <ul class="bullets">
-              <li>Preprocessing framework to improve data quality and consistency</li>
-              <li>Model evaluation with cross-validated metrics</li>
-            </ul>
-            <div class="project__links">
-              <a class="btn btn--small btn--ghost" href="https://github.com/czhang2884" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
-          </article>
-
-          <article class="card project" data-tags="r">
-            <div class="project__head">
-              <h3>Interactive Dashboard: End-of-Life Care Utilization</h3>
-              <span class="badge">R • Shiny</span>
-            </div>
-            <p>
-              Built and deployed an interactive Shiny dashboard to explore regional utilization patterns with intuitive
-              filters and visualizations for interpretation.
-            </p>
-            <div class="project__links">
-              <a class="btn btn--small btn--primary" href="https://zhangc3.shinyapps.io/final-project-carl/" target="_blank" rel="noreferrer">Live App</a>
-            </div>
-          </article>
-
-          <article class="card project" data-tags="python sql">
-            <div class="project__head">
-              <h3>Growth & Equity Modeling (Education Analytics)</h3>
-              <span class="badge">Python • SQL</span>
-            </div>
-            <p>
-              Modeled assessment performance and growth disparities across subjects and demographic groups to identify
-              actionable gaps and prioritize interventions.
-            </p>
-            <ul class="bullets">
-              <li>Regression-based modeling and subgroup comparisons</li>
-              <li>Recommendations translated into curriculum-focused priorities</li>
-            </ul>
-            <div class="project__links">
-              <a class="btn btn--small btn--ghost" href="#contact">Ask for details</a>
-            </div>
-          </article>
-
-          <article class="card project" data-tags="sas r">
-            <div class="project__head">
-              <h3>Clinical Methods & Reporting Outputs</h3>
-              <span class="badge">SAS • R</span>
-            </div>
-            <p>
-              Applied clinical trial methods and generated clinical-style outputs (e.g., swimmer plots),
-              emphasizing reproducible reporting and sensitivity checks.
-            </p>
-            <ul class="bullets">
-              <li>Trial design / monitoring methods (simulation-based evaluation)</li>
-              <li>Publication-quality tables/figures and structured reporting</li>
-            </ul>
-            <div class="project__links">
-              <a class="btn btn--small btn--ghost" href="#publications">Related publications</a>
-            </div>
-          </article>
-
-          <article class="card project" data-tags="sql">
-            <div class="project__head">
-              <h3>Reusable Reporting: Metrics + QA Checks</h3>
-              <span class="badge">SQL</span>
-            </div>
-            <p>
-              Built repeatable reporting patterns focused on metric definitions, validation checks, and consistency across outputs.
-              (Example structure available upon request.)
-            </p>
-            <ul class="bullets">
-              <li>Data validation checks to reduce errors</li>
-              <li>Documentation to support future reuse</li>
-            </ul>
-            <div class="project__links">
-              <a class="btn btn--small btn--ghost" href="#contact">Request a sample</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section__head">
-          <h2>Experience</h2>
-          <p>Analytics delivery, teaching/coaching, and applied research.</p>
-        </div>
-
-        <div class="stack">
-          <article class="card">
-            <div class="xp__head">
-              <div>
-                <h3>Teaching Assistant</h3>
-                <div class="muted">University of Minnesota</div>
-              </div>
-              <div class="muted">01/2025 – 05/2025</div>
-            </div>
-            <ul class="bullets">
-              <li>Mentored 30+ students in regression/ANOVA workflows in R; supported varying statistical fluencies.</li>
-              <li>Diagnosed coding/modeling errors and reinforced reproducible analysis practices.</li>
-              <li>Helped translate results into correct interpretation and clear reporting.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="xp__head">
-              <div>
-                <h3>Data Fellow</h3>
-                <div class="muted">Delta Analytics</div>
-              </div>
-              <div class="muted">02/2024 – 06/2024</div>
-            </div>
-            <ul class="bullets">
-              <li>Built a structured preprocessing framework for 50,000+ text records to improve integrity for downstream analysis.</li>
-              <li>Evaluated modeling approaches with cross-validated metrics; selected methods improving performance ~40% and stable across heterogeneous sources.</li>
-              <li>Delivered documented, version-controlled scripts for local execution and future scalability.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="xp__head">
-              <div>
-                <h3>Student Data Consultant</h3>
-                <div class="muted">Carleton College</div>
-              </div>
-              <div class="muted">09/2021 – 06/2023</div>
-            </div>
-            <ul class="bullets">
-              <li>Automated survey data wrangling in R for campus research; improved consistency and reduced manual preprocessing.</li>
-              <li>Built and maintained a Django dashboard integrating web-scraped telescope calibration data for research stakeholders.</li>
-              <li>Resolved code-related maintenance issues across campus systems to ensure stable functionality.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="xp__head">
-              <div>
-                <h3>Research Intern (Clinical / Outcomes)</h3>
-                <div class="muted">Mayo Clinic</div>
-              </div>
-              <div class="muted">07/2021 – 09/2021</div>
-            </div>
-            <ul class="bullets">
-              <li>Analyzed multi-trial clinical datasets to define interpretable outcome thresholds using equipercentile linking.</li>
-              <li>Performed baseline-adjusted and sensitivity/stratified validation analyses supporting robustness across trials.</li>
-              <li>Contributed analyses supporting two peer-reviewed publications.</li>
-            </ul>
-          </article>
         </div>
       </div>
     </section>
